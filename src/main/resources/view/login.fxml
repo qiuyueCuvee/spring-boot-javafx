@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane hgap="10.0" vgap="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controller.LoginController">
+    <columnConstraints>
+        <ColumnConstraints minWidth="-Infinity" />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Label text="用户名：" />
+        <TextField fx:id="txtUsername" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" />
+        <Label text="密码：" GridPane.rowIndex="1" />
+        <PasswordField fx:id="txtPassword" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" />
+        <HBox alignment="BASELINE_RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <children>
+                <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#loginButtonClicked" text="登录" />
+            </children>
+        </HBox>
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</GridPane>
